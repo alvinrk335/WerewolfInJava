@@ -6,6 +6,7 @@ import InterfacePackage.RandomTarget;
 import InterfacePackage.Shield;
 
 public class Guardian extends Player {
+
 	public Guardian(String name) {
 		super(name, new Shield(), "guardian");
 	}
@@ -23,4 +24,6 @@ public class Guardian extends Player {
 		Thread.sleep(2000);
 		ability.action(randomPick);
 	}
+	
+
 }

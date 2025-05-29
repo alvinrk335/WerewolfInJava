@@ -15,7 +15,6 @@ public class Werewolf extends Player{
 		ability.action(target);
 		Thread.sleep(2000);
 	}
-	
 	public void actionForNpc(int size, ArrayList<Player>players) throws InterruptedException {
 		RandomTarget random = new RandomTarget();
 		Player randomPick = random.generateRandomTarget(size, players);

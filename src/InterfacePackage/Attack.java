@@ -7,8 +7,8 @@ public class Attack implements IAbilities{
 	@Override
 	public void action(Player target) throws InterruptedException {
 		if(target.isShielded()) {
+			System.out.println("werewolf attacked "+ target.getName() + ". Target is shielded, no harm done");
 			target.setShield(false);
-			System.out.println("werewolf attacked player "+ target.getName() + ". Target is shielded, no harm done");
 		}
 		else {
 			System.out.println("werewolf killed "+ target.getName());
